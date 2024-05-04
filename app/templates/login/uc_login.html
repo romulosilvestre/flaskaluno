@@ -1,39 +1,43 @@
+<!-- comentário em html -->
+<!--tipo do documento-->
 <!DOCTYPE html>
+<!--idioma-->
 <html lang="pt-br">
+<!--inicio do cabeçalho-->
 <head>
+   <!--caracteres - café-->
     <meta charset="UTF-8">
+    <!--rodar o celular-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - ProjectScorte</title>
+    <!--título-->
+    <title>Login - ProjectScore</title>
     <!--comentário html-->
     <!--insira o bootstrap aqui!-->
+
     <link rel="stylesheet"  href="{{url_for('static',filename='css/bootstrap.css')}}">
 </head>
-<body>
-
-   <!--O grid do bootstrap é uma tabela com 12 colunas-->
-   <!--Você vai personalizando a quantidade de linhas-->
-   <!--Você vai personalizando a quantidade de colunas que os elementos vão ocupar-->
-
+<body>  
+    
    <div class="container">
       <div class="row">
-         <div class="col">
-            <div class="mb-3">
-               <label for="exampleFormControlInput1" class="form-label">email</label>
-               <input type="email" class="form-control" id="exampleFormControlInput1">
-             </div>
-             <div class="mb-3">
-               <label for="exampleFormControlTextarea1" class="form-label">senha</label>
-               <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-             </div>
-        </div>        
-     
-      <div class="row">
-         <div class="col">
-            <button type="button" class="btn btn-primary col-4">entrar</button>
-         </div>
-      
+           <div class="col">
+               <nav  class="navbar" style="background-color: #e3f2fd;">
+                   Athenas
+               </nav>
+           </div>
       </div>
-    </div>
-    
+      <div class="row">
+          <div class="col-3">
+             <form>
+                email <input type="email" class="form-control" name="email">
+                senha <input type="password" class="form-control" name="senha">
+                <button type="button" class="btn btn-primary"> entrar </button>
+            </form>
+          </div>        
+      </div>
+
+      
+   </div>      
+     
 </body>
 </html>

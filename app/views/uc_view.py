@@ -12,7 +12,17 @@ from flask import render_template
 
 @app.route('/')
 def index():
+   return render_template("login/uc_login.html")
+
+
+
+
+"""
+@app.route('/')
+def index():
       return render_template("login/uc_login.html")
+"""
+
 
 
 
@@ -57,3 +67,7 @@ def login_ps(user):
     else:
         return "alô rota! visitante!"
     
+
+@app.route("/cadastrar")
+def cadastrar_uc():
+      return render_template("uc/uc_cad.html")
